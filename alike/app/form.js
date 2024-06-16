@@ -6,10 +6,8 @@ export default function Form() {
     const [male, setMale] = useState('');
     const [female, setFemale] = useState('');
     const [result, setResult] = useState(null);
-    const [loading,setLoading] = useState(false);
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setLoading(true);
         try {
             const response = await fetch('/api/server', {
                 method: 'POST',
