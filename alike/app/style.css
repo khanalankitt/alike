@@ -1,0 +1,79 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border: 5px solid lightcoral;
+  background: lightcoral;
+}
+.container h2 {
+  text-align: center;
+  color: white;
+  background: lightcoral;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .part {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.container .part .left {
+  background: lightblue;
+}
+.container .part .right {
+  background: lightpink;
+}
+.container .part div {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .part div p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+.container .part div input {
+  text-align: center;
+  height: 30px;
+}
+.container button {
+  height: 40px;
+  width: 180px;
+  font-size: 20px;
+  color: rgb(128, 35, 103);
+  font-weight: bold;
+  background: rgb(104, 249, 177);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  transition: 0.1s ease-in-out;
+  margin-top: 14px;
+  cursor: pointer;
+}
+.container button:hover {
+  background: rgb(97, 222, 134);
+}/*# sourceMappingURL=style.css.map */
