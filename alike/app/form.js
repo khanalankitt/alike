@@ -6,8 +6,10 @@ export default function Form() {
     const [male, setMale] = useState('');
     const [female, setFemale] = useState('');
     const [result, setResult] = useState(null);
+    const [loading,setLoading] = useState(false);
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true);
         try {
             const response = await fetch('/api/server', {
                 method: 'POST',
@@ -23,6 +25,7 @@ export default function Form() {
 
             const data = await response.json();
             setResult(data);
+            setLoading(false);
         } catch (error) {
             console.error('Error fetching data:', error);
         }
@@ -58,6 +61,7 @@ export default function Form() {
                 </div>
                 <button type='submit'>Calculate</button>
             </form>
+            {loading && <div className="result"><Image className="loader" unoptimized src='/loaderr.gif' height={100} width={100} alt="loader"/></div>}
             {result && (
                 <div className="result">
                     <p style={{
