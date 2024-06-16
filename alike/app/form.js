@@ -10,6 +10,7 @@ export default function Form() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
+        setResult(null);
         try {
             const response = await fetch('/api/server', {
                 method: 'POST',
