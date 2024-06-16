@@ -17,7 +17,6 @@ body{
     border-radius: 10px;
     margin: 100px auto; 
     @include center();
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     border: 10px solid lightcoral;
@@ -81,5 +80,19 @@ body{
         &:hover{
             background: rgb(97, 222, 134);
         }
+    }
+}
+.result{
+    margin: -90px auto;
+    height: 100px;
+    width: 400px;
+    border-radius: 10px;
+    background: lightcoral;
+    @include center;
+    flex-direction: column;
+    p{
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
     }
 }
